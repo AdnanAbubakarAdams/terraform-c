@@ -30,7 +30,11 @@ resource "aws_instance" "practice_server" {
   ami           = "ami-0069eac59d05ae12b"
   instance_type = "t2.micro"
 
+### Adding name tags ###
   tags = {
     Name = var.instance_name
   }
 }
+
+
+
